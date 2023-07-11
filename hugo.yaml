@@ -3,7 +3,7 @@
 # title = 'My New Hugo Site'
 # theme: "PaperMod"
 
-baseURL: "https://examplesite.com/"
+baseURL: "https://ysj1996.github.io/yaoshengjian_blog/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 title: yaoshengjian's blog
 paginate: 5
 theme: PaperMod
@@ -17,7 +17,8 @@ buildExpired: false
 
 minify:
   disableXML: true
-  minifyOutput: true
+  # minifyOutput: true
+
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -57,7 +58,7 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Home"
+    text: "Yao Shengjian"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
@@ -82,12 +83,13 @@ params:
     Content: Welcome to my blog
 
   socialIcons:
-    - name: twitter
-      url: "https://twitter.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/YSJ1996"
+    - name: linkedin
+      url: "www.linkedin.com/in/edisonyao"
+    # - name: stackoverflow
+    #   url: "https://stackoverflow.com"
+
 
   analytics:
     google:
@@ -119,18 +121,27 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
+    - name: Archive
+      url: archives
+      weight: 5
+    - name: Search
+      url: search/
       weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
-      weight: 30
+    - name: Tags
+      url: tags/
+      weight: 10
+    # - name: WiKi
+    #   url: https://github.com/adityatelange/hugo-PaperMod/wiki/
+    # - name: Discord
+    #   url: https://discord.gg/ahpmTvhVmp
+
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+        
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
