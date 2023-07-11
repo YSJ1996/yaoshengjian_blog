@@ -11,8 +11,12 @@
             "id": "1eee35ea2ec6e0ea",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/when-hive-concat-meets-null.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "content/posts/when-hive-concat-meets-null.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "content/posts/when-hive-concat-meets-null.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "content/posts/when-hive-concat-meets-null.md"
+              }
             }
           }
         ]
@@ -140,6 +148,12 @@
   },
   "active": "1eee35ea2ec6e0ea",
   "lastOpenFiles": [
+    "content/posts/images/concat_source_code.png",
+    "content/posts/concat_source_code.png",
+    "content/concat_source_code.png",
+    "content/posts/images",
+    "content/posts/未命名文件夹",
+    "assets/concat_source_code.png",
     "content/posts/when-hive-concat-meets-null.md",
     "memo.md",
     "content/posts/my-first-post.md",

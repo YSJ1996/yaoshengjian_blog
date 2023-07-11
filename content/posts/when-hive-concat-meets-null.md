@@ -1,9 +1,9 @@
 ---
-title: ""
+title: "When hive concat meets null"
 date: 2023-07-10T12:00:00+00:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["first"]
+tags: ["hive"]
 author: "yaoshengjian"
 # author: ["Me", "You"] # multiple authors
 showToc: true
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Desc Text."
+description: ""
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
@@ -36,4 +36,16 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-test
+`concat()` function is frequently used in hive to combine multiple string. However there is a small caveat: if `null` is passed as an argument, the function will return `null` regardless of the other parameters! Therefore, the recommend usage is as follows:
+
+>```sql
+>select concat(nvl(col_1, ''), nvl(col_2, ''))
+>```
+
+Here I use `nvl()` function to make sure the parameters of `concat()` function will not be `null`.
+This is also applicable to the `concat_ws()` function in Hive SQL. 
+
+Let us check the [source code](https://github.com/apache/hive/blob/24a82a65f96b65eeebe4e23b2fec425037a70216/ql/src/java/org/apache/hadoop/hive/ql/udf/generic/GenericUDFConcat.java) of `concat()` function.
+
+
+![source code](../images/concat_source_code.png)
