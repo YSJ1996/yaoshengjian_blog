@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/when-hive-concat-meets-null.md",
+                "file": "content/posts/test.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/when-hive-concat-meets-null.md",
+                "file": "content/posts/test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/when-hive-concat-meets-null.md",
+                "file": "content/posts/test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/when-hive-concat-meets-null.md"
+                "file": "content/posts/test.md"
               }
             }
           }
@@ -148,15 +148,16 @@
   },
   "active": "1eee35ea2ec6e0ea",
   "lastOpenFiles": [
+    "content/posts/my-first-post.md",
+    "content/posts/test.md",
+    "content/posts/when-hive-concat-meets-null.md",
+    "memo.md",
     "content/posts/images/concat_source_code.png",
     "content/posts/concat_source_code.png",
     "content/concat_source_code.png",
     "content/posts/images",
     "content/posts/未命名文件夹",
     "assets/concat_source_code.png",
-    "content/posts/when-hive-concat-meets-null.md",
-    "memo.md",
-    "content/posts/my-first-post.md",
     "content/resources/_gen/images",
     "content/resources/_gen/assets",
     "content/resources/_gen",
