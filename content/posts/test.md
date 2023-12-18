@@ -32,4 +32,7 @@ editPost:
   Text: Suggest Changes
   appendFilePath: true
 ---
-Test for easy posting.
+Test for 公式.
+
+$\frac{x+y}{y+z}$
+$\frac{x+y}{y+z}$
